@@ -20,7 +20,7 @@ const animate = document.querySelectorAll(".animate");
 
 
 window.addEventListener("scroll", ()=>{
-    const triggerBot = window.innerHeight / 3 * 4;
+    const triggerBot = window.screen.height - 450;
     animate.forEach((div)=>{
         const boxTop = div.getBoundingClientRect().top;
         if(boxTop < triggerBot){
